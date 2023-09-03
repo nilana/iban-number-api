@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Interfaces\UserInterface;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Auth;
 
 class UserController extends Controller
 {
@@ -88,8 +89,15 @@ class UserController extends Controller
         ];
         try{
             //$users = DB::table('users')->whereNotNull('iban')->paginate(2);
-            $users = DB::table('users')->paginate(2);
-            $return['data'] = ['users' => $users];
+            if(Auth::user()->is_admin){
+                $users = DB::table('users')->paginate(2);
+                $return['data'] = ['users' => $users];
+            }else{
+                $return = [
+                    'success' => false,
+                    'message' => 'Unauthorized '
+                ];
+            }
         }catch(\Exception $e){
     
             $return = [
