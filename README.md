@@ -14,8 +14,10 @@ DB_PORT=3306 <br>
 DB_DATABASE=iban <br>
 DB_USERNAME=root <br>
 DB_PASSWORD=nilan123 <br><br>
-Then run the “php artisan migrate” command to migrate all the DB tables <br>
-run php artisan db:seed to seed administrator and other sample user data<br>
+
+Inside the container:
+run “php artisan migrate” command to migrate all the DB tables <br>
+run "php artisan db:seed" to seed administrator and other sample user data<br><br>
 Admin Login<br>
 Email: admin@example.com<br>
 Password: password<br>
