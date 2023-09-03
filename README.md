@@ -15,7 +15,7 @@ DB_DATABASE=iban <br>
 DB_USERNAME=root <br>
 DB_PASSWORD=nilan123 <br><br>
 
-Inside the container:
+Inside the container:<br>
 run “php artisan migrate” command to migrate all the DB tables <br>
 run "php artisan db:seed" to seed administrator and other sample user data<br><br>
 Admin Login<br>
