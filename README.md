@@ -15,6 +15,10 @@ DB_DATABASE=iban <br>
 DB_USERNAME=root <br>
 DB_PASSWORD=nilan123 <br><br>
 Then run the “php artisan migrate” command to migrate all the DB tables <br>
+run php artisan db:seed to seed administrator and other sample user data<br>
+Admin Login<br>
+Email: admin@example.com<br>
+Password: password<br>
 Now the API is ready and running under the uri http://localhost:19000/api
 </p>
 <p>
