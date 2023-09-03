@@ -90,7 +90,7 @@ class UserController extends Controller
         try{
             //$users = DB::table('users')->whereNotNull('iban')->paginate(2);
             if(Auth::user()->is_admin){
-                $users = DB::table('users')->paginate(2);
+                $users = DB::table('users')->paginate(10);
                 $return['data'] = ['users' => $users];
             }else{
                 $return = [
