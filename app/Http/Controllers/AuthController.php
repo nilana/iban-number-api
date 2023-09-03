@@ -23,9 +23,8 @@ class AuthController extends Controller
             return response()->json(
                 [   
                     'success' => false,
-                    'message' => $validator->errors()
+                    'message' => $validator->errors()->first()
                 ], 
-                422
             );
         }
 
@@ -55,9 +54,8 @@ class AuthController extends Controller
             return response()->json(
                 [   
                     'success' => false,
-                    'message' => $validator->errors()
+                    'message' => $validator->errors()->first()
                 ], 
-                422
             );
         }
         $credentials = $request->only('email', 'password');
@@ -79,7 +77,6 @@ class AuthController extends Controller
             'success' => false,
             'message' => 'Invalid credentials'
         ], 
-        401
         );
     }
 
