@@ -9,7 +9,7 @@ Overwrite the following variables in .env file (create the .env from .env.exampl
 
 <p>
 DB_CONNECTION=mysql <br>
-DB_HOST=mysql <br>>
+DB_HOST=mysql <br>
 DB_PORT=3306 <br>
 DB_DATABASE=iban <br>
 DB_USERNAME=root <br>
@@ -20,22 +20,22 @@ Now the API is ready and running under the uri http://localhost:19000/api
 <p>
 API end points<br><br>
 
-POST /register - User registration 
-Parameters 
+<b>POST /register - User registration</b> <br> 
+<b>Parameters</b><br><br>
 
-name - Required
-email - Required
-password - Required
-password_confirmation – Required
+name - Required<br>
+email - Required<br>
+password - Required<br>
+password_confirmation – Required<br>
 
-POST /login - User Login 
-Parameters
+<b>POST /login - User Login</b><br>
+<b>Parameters</b><br><br>
 
-email - Required
-password – Required
+email - Required<br>
+password – Required<br>
 
-POST /iban – Save IBAN 
-Parameters:
+<b>POST /iban – Save IBAN<b><br>
+<b>Parameters:</b><br><br>
 
 iban - Required
 </p>
