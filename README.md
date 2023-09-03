@@ -34,7 +34,7 @@ password_confirmation – Required<br>
 email - Required<br>
 password – Required<br>
 
-<b>POST /iban – Save IBAN<b><br>
+<b>POST /iban – Save IBAN</b><br>
 <b>Parameters:</b><br><br>
 
 iban - Required
